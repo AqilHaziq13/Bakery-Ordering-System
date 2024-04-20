@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bakery.management.system.SignupController">
+   <children>
+      <Button fx:id="btnSignup" layoutX="454.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="107.0" style="-fx-background-color: #0099ff;" text="Signup">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <VBox layoutX="43.0" layoutY="160.0" prefHeight="189.0" prefWidth="233.0">
+         <children>
+            <Label text="Email">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="tfEmail" promptText="example@email.com">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin></TextField>
+            <Label text="Password">
+               <VBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </VBox.margin></Label>
+            <PasswordField fx:id="pfPassword" promptText="Setup your password">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin></PasswordField>
+         </children>
+      </VBox>
+      <HBox prefHeight="110.0" prefWidth="620.0" style="-fx-background-color: #0099ff;">
+         <children>
+            <Label text="Bakery Order System">
+               <font>
+                  <Font name="Centaur" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="170.0" top="35.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="14.0" layoutY="115.0" text="SIGNUP PAGE" textFill="#0099ff">
+         <font>
+            <Font name="Centaur" size="38.0" />
+         </font>
+      </Label>
+      <VBox layoutX="328.0" layoutY="160.0" prefHeight="189.0" prefWidth="233.0">
+         <children>
+            <Label text="Name">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="tfName" promptText="Full Name">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin></TextField>
+            <Label text="Address">
+               <VBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="tfAddress" promptText="Current Address">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin></TextField>
+         </children>
+      </VBox>
+      <Button fx:id="btnPrevPage" layoutX="53.0" layoutY="349.0" mnemonicParsing="false" onAction="#handlePrevPage" prefHeight="37.0" prefWidth="107.0" style="-fx-background-color: #0099ff;" text="Login Page">
+                <HBox.margin>
+                    <Insets right="10.0" />
+                </HBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+        </Button>
+   </children>
+</AnchorPane>
